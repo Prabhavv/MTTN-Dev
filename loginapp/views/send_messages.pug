@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 #{title}
+  form(method='POST',action='/messages/send')
+    #form-group
+      label Title:
+      input.form-control(name='title',type='text')
+    #form-group
+      label Name:
+      input.form-control(name='author',type='text')
+    #form-group
+      label Send Message:
+      textarea.form-control(name='body')
+    input.btn.btn-primary(type='submit',value='Submit')                
+         

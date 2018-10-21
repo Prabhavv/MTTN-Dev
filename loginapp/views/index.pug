@@ -1,0 +1,9 @@
+extends layout 
+
+block content
+  h1 #{title}
+  ul.list-group
+    each message , i in messages
+      li.list-group-item
+        a(href="/messages/"+message._id)= message.title
+    

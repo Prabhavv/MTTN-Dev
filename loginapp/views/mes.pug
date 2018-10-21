@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= message.title
+  h6 Sent by #{message.author}
+  hr
+  p= message.body
+    if user.isAdmin
+       hr
+       a.btn.btn-danger.delete-message(href='#',data-id=message._id) Delete
