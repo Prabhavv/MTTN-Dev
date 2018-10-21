@@ -10,6 +10,8 @@ $ npm install --save bcyrptjs body-parser connect-flash express express-messages
 
 
 Once installing all the dependencies you should be able to host it locally on port 3000
+by using the command 
+ $ node app
 
 Since it's connected to an online database there is nothing related to mongodb to be done, 
 
