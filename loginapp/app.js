@@ -9,7 +9,7 @@ const config = require('./config/database');
 const passport = require('passport');
 
 
-mongoose.connect('/mongodb://localhost/messageportal',{ useNewUrlParser: true });
+mongoose.connect('mongodb://prabhav:prabhav6@ds237723.mlab.com:37723/messageportal',{ useNewUrlParser: true });
 let db = mongoose.connection;
 //checking for connection
 db.once('open',function(){
